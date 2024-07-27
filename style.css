@@ -286,6 +286,7 @@ font-size: 3rem;
 font-weight: 900;
 line-height: 120%;
 text-align: left;
+padding-bottom: 1rem;
 }
 .training-section p{
     color: rgba(255, 255, 255, 0.5);
@@ -321,7 +322,7 @@ text-align: left;
     position: relative;
 } */
 .training-image img{
- 
+ position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -371,16 +372,59 @@ text-align: left;
     opacity: 0.6;
 }
 .training-image p{
-    color:rgb(255, 255, 255);
-font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+   position: absolute;
+font-size: 0.7rem;
 font-weight: 500;
-line-height: 17px;
-
+line-height: 12px;
+z-index: 5;
 }
+.training-image-1 p{
+    color: rgb(0,0,0);
+    font-size: 0.7rem;
+    font-weight: 700;
+   top: 114.5rem;
+   left: 16.6%;
+}
+.training-image-2 p{
+    top: 109rem;
+    left: 35%;
+}
+.training-image-3 p{
+    top: 115rem;
+   left: 66%;
+}
+.training-image-4 .full-text{
+    position: absolute;
+    top: 120rem;
+    left: 30.5%;
+}
+.training-image-4 .short-text{
+    visibility: hidden;
+    position: absolute;
+    top: 120rem;
+    left: 30.5%;
+}
+.training-image-5 .full-text5{
+    position: absolute;
+    top: 126rem;
+    left: 46%;
+}
+.training-image-5 .short-text5{
+    visibility: hidden;
+    position: absolute;
+    top: 126rem;
+    left: 46%;
+}
+.training-image-6 p{
+    top: 126rem;
+    left: 66%;
+}
+/* calculator section */
 
  /* responsive media query  */
      @media screen and (max-width:576px){
-        .nav-container, .banner, .habits-container, .extra-mile{
+        .nav-container, .banner, .habits-container, .extra-mile , .training-section{
             width: 90%;
        
         }
@@ -476,5 +520,63 @@ letter-spacing: 0.3px;
             border-radius: 1.2rem;
            
             
+        }
+        .training-section{
+            margin-top: 24rem;
+        }
+        .training-section h3{
+            font-size: 2.2rem;
+        }
+        .training-section p{
+           font-size: 0.9rem;
+           font-weight: 600;
+           padding-right: 2rem;
+        }
+        .training-row-1{
+            grid-template-columns: 1fr 1fr 0fr;
+        }
+        .training-row-2{
+            grid-template-columns: 0.95fr 1.05fr 0fr;
+        }
+        .training-image p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        }
+        .training-image-1 p{
+            color: rgb(255,255,255);
+             top: 236.5rem;
+           left: 11%;
+        }
+        /* .training-image-2 img{
+            object-fit: none;
+        } */
+        .training-image-2 p{
+            top: 232rem;
+           left: 55%;
+        }
+     
+       .training-image-3 p{
+        visibility: hidden;
+       }
+       .training-image-4 .full-text{
+       visibility: hidden;
+    }
+    .training-image-4 .short-text{
+  visibility: visible;
+        position: absolute;
+        top: 250rem;
+        left: 11%;
+    }
+       .training-image-5 .full-text5{
+            visibility: hidden;
+         }
+         .training-image-5 .short-text5{
+       visibility: visible;
+             position: absolute;
+             top: 249rem;
+             left: 58%;
+         }
+        .training-image-6 p{
+          visibility: hidden;
         }
      }
