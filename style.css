@@ -5,14 +5,14 @@ body{
     background-color: black;
     color: rgb(255, 255, 255);
     max-width: 1920px;
-    /* border: 2px dashed green; */
+      /* border: 2px dashed green;   */
     
 }
 /* default styles */
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+     /* border: 1px solid red;   */
 }
 .btn-primary{
     width: 5.5rem;
@@ -53,6 +53,11 @@ font-style: italic;
     justify-content: space-between;
     align-items: center;
     gap: 1.85rem;
+    box-sizing: border-box;
+border: 1.5px solid rgba(255, 255, 255, 0.2);
+border-radius: 39px;
+padding: 0.6rem;
+
 }
 
 /* banner section  */
@@ -129,7 +134,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 1rem;
-bottom: 40%;
+bottom: 15%;
 right: 60%;
 
 
@@ -163,9 +168,9 @@ font-weight: 400;
  
     display: flex;
     flex-direction: column;
-   left: 80%;
+   left: 70%;
    position: absolute;
-   bottom: 70%;
+   bottom: 65%;
    width: 11rem;
    height: 5rem;
    box-sizing: border-box;
@@ -173,7 +178,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 12px;
 
 backdrop-filter: blur(100%);
-background: rgba(48, 48, 48, 0.54);
+background: rgba(48, 48, 48, 0.7);
 
 padding: 1rem;
    
@@ -196,7 +201,7 @@ font-weight: 800;
     margin: 0 auto;
     
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 .habits-container h3{
     font-size: 3rem;
@@ -322,11 +327,11 @@ text-align: left;
     height: 55%;
     
 }
-/* .training-image{
+ .training-image{
     position: relative;
-} */
-.training-image img{
- position: relative;
+} 
+.training-image img {
+ 
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -387,42 +392,42 @@ z-index: 5;
     color: rgb(0,0,0);
     font-size: 0.7rem;
     font-weight: 700;
-   top: 114.5rem;
-   left: 16.6%;
+ top: 70%;
+ left: 10%;
 }
 .training-image-2 p{
-    top: 109rem;
-    left: 35%;
+   top: 15%;
+   left: 10%;
 }
 .training-image-3 p{
-    top: 115rem;
-   left: 66%;
+    top: 70%;
+   left: 10%;
 }
 .training-image-4 .full-text{
     position: absolute;
-    top: 120rem;
-    left: 30.5%;
+    top: 18%;
+    left: 57%;
 }
 .training-image-4 .short-text{
     visibility: hidden;
     position: absolute;
-    top: 120rem;
-    left: 30.5%;
+    top: 18%;
+    left: 57%;
 }
 .training-image-5 .full-text5{
     position: absolute;
-    top: 126rem;
-    left: 46%;
+    top: 70%;
+   left: 20%;
 }
 .training-image-5 .short-text5{
     visibility: hidden;
     position: absolute;
-    top: 126rem;
-    left: 46%;
+    top: 70%;
+   left: 20%;
 }
 .training-image-6 p{
-    top: 126rem;
-    left: 66%;
+    top: 65%;
+   left: 20%;
 }
 /* calculator section */
 .calculator-section{
@@ -779,20 +784,20 @@ letter-spacing: 0.3px;
             grid-template-columns: 0.95fr 1.05fr 0fr;
         }
         .training-image p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 400;
         }
         .training-image-1 p{
             color: rgb(255,255,255);
-             top: 236.5rem;
-           left: 11%;
+            top: 70%;
+            left: 10%;
         }
         /* .training-image-2 img{
             object-fit: none;
         } */
         .training-image-2 p{
-            top: 232rem;
-           left: 55%;
+          top: 15%;
+           left: 15%;
         }
      
        .training-image-3 p{
@@ -804,8 +809,8 @@ letter-spacing: 0.3px;
     .training-image-4 .short-text{
   visibility: visible;
         position: absolute;
-        top: 250rem;
-        left: 11%;
+        top: 80%;
+        left: 10%;
     }
        .training-image-5 .full-text5{
             visibility: hidden;
@@ -813,8 +818,8 @@ letter-spacing: 0.3px;
          .training-image-5 .short-text5{
        visibility: visible;
              position: absolute;
-             top: 249rem;
-             left: 58%;
+             top: 80%;
+             left: 10%;
          }
         .training-image-6 p{
           visibility: hidden;
@@ -901,7 +906,7 @@ letter-spacing: 0.3px;
 
         .meet-section{
             width: 90%;
-            height: 150rem;
+            height: 127rem;
             margin-top: 18rem;
         }
         .meet-section h3{
@@ -951,53 +956,51 @@ letter-spacing: 0.3px;
 
 
         .footer{
-            width: 100%;
-            height: 28rem;
-            padding: 0;
-            background: rgb(33, 33, 33);
+         
+            height: 60rem;
+           
         }
         .footer-up{
-            display: grid;
-            grid-template-columns: 1.5fr 0.7fr 0.8fr;
-            height: 11rem;
-            padding: 5rem 0 6rem 0;
+            grid-template-columns: 1fr;
+            height: 20rem;
+        
             
         }
         .footer-1{
-        padding: 0 7rem 0 8rem;
+        padding: 0 3rem 0 1.5rem;
         }
         .footer-1 h3{
-            font-size: 3.8rem;
-            font-weight: 900;
-            padding-bottom: 1rem;
+            font-size: 4rem;
+           
+            padding-bottom: 1.5rem;
             
         }
         .footer p{
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.9rem;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.3px;
-            text-align: left;
+           
+            font-size: 1rem;
+           padding-bottom: 1rem;
         }
         
         .footer-t h3{
-            font-size: 1.9rem;
-            padding: 1rem 0;
+            font-size: 2.2rem;
+            padding: 1.3rem 1.2rem;
         
         }
         .footer-t p{
-            font-size: 1.2rem;
-            padding-bottom: 1rem;
+            font-size: 1.4rem;
+            padding-bottom: 1.2rem;
+            padding-left: 1.2rem;
         }
         hr{
-            width: 80%;
-            margin: 0 auto;
-            border-color: rgba(255, 255, 255, 0.2);
+            width: 90%;
+          
+           
+        }
+        .footer-down{
+            margin-top: 23rem;
         }
         .footer-down p{
-            font-size: 1rem;
-            text-align: center;
+            font-size: 1.3rem;
             padding: 2rem 0;
         }
         
