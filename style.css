@@ -5,14 +5,14 @@ body{
     background-color: black;
     color: rgb(255, 255, 255);
     max-width: 1920px;
-    border: 2px dashed green;
+    /* border: 2px dashed green; */
     
 }
 /* default styles */
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .btn-primary{
     width: 5.5rem;
@@ -508,8 +508,8 @@ padding: 5rem 2rem 1rem 0;
     padding: 0 0 2rem 0;
 }
 input[type=number],select{
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.8rem;
+    color: rgba(164, 160, 160, 0.6);
+    font-size: 1rem;
     font-weight: 400;
     box-sizing: border-box;
     border-radius: 0.3rem;
@@ -526,15 +526,139 @@ gap: 3%;
   padding-bottom: 12px;
 }
 .input-row-3 select{
-    width: 32.6rem;
+    width: 33rem;
 }
 .input-row-4 {
     padding-top: 10px;
 }
 .input-row-4 .btn-primary{
-    width: 11rem;
+    width: 13rem;
     height: 2.8rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
+
+/* meet section */
+.meet-section{
+    width: 70%;
+    height: 50rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.meet-section h3{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.meet-section p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    padding: 0 6rem 4rem;
+}
+.meet-image-container{
+   
+    height: 33.5rem;
+    background: rgb(33, 33, 33);
+   border-radius: 1rem;
+   padding: 0.5rem;
+}
+.meet-row-1, .meet-row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.meet-image img{
+   
+    width: 92%;
+    height: 15.5rem;
+    background-size: cover;
+    border-radius: 1.2rem;
+    padding: 0.5rem;
+    filter: brightness(80%);
+}
+.meet-image{
+    position: relative;
+}
+.meet-image h3{
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0;
+}
+.meet-image p{
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 0;
+}
+.name{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.designation{
+    position: absolute;
+    top: 78%;
+    left: 10%;
+}
+
+/* footer section  */
+.footer{
+    width: 100%;
+    height: 28rem;
+    padding: 0;
+    background: rgb(33, 33, 33);
+}
+.footer-up{
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 0.8fr;
+    height: 11rem;
+    padding: 5rem 0 6rem 0;
+    
+}
+.footer-1{
+padding: 0 7rem 0 8rem;
+}
+.footer-1 h3{
+    font-size: 3.8rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    
+}
+.footer p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+.footer-t h3{
+    font-size: 1.9rem;
+    padding: 1rem 0;
+
+}
+.footer-t p{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+hr{
+    width: 80%;
+    margin: 0 auto;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.footer-down p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
  /* responsive media query  */
      @media only screen  and (max-width:576px){
      
@@ -712,7 +836,7 @@ letter-spacing: 0.3px;
         .calculator{
             height: 47rem;
             flex-direction: column;
-            background: rgb(46, 45, 45);
+          
         }
       
         table{
@@ -773,4 +897,108 @@ letter-spacing: 0.3px;
             font-size: 2rem;
             font-weight: 700;
         }
+
+
+        .meet-section{
+            width: 90%;
+            height: 150rem;
+            margin-top: 18rem;
+        }
+        .meet-section h3{
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+        }
+        
+        .meet-section p{
+            font-size: 1rem;
+            
+            padding:0 0  3rem;
+        }
+        .meet-image-container{
+           
+            height: 110rem;
+          
+        }
+        .meet-row-1, .meet-row-2{
+            grid-template-columns: 1fr;
+        }
+        .meet-image img{
+           
+            width: 92%;
+            height: 17rem;
+           padding-left: 1rem;
+        }
+       
+        .meet-image h3{
+            font-size: 1.2rem;
+           
+        }
+        .meet-image p{
+            font-size: 1rem;
+            font-weight: 500;
+           
+        }
+        .name{
+            position: absolute;
+            top: 70%;
+            left: 10%;
+        }
+        .designation{
+            position: absolute;
+            top: 78%;
+            left: 10%;
+        }
+
+
+        .footer{
+            width: 100%;
+            height: 28rem;
+            padding: 0;
+            background: rgb(33, 33, 33);
+        }
+        .footer-up{
+            display: grid;
+            grid-template-columns: 1.5fr 0.7fr 0.8fr;
+            height: 11rem;
+            padding: 5rem 0 6rem 0;
+            
+        }
+        .footer-1{
+        padding: 0 7rem 0 8rem;
+        }
+        .footer-1 h3{
+            font-size: 3.8rem;
+            font-weight: 900;
+            padding-bottom: 1rem;
+            
+        }
+        .footer p{
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            text-align: left;
+        }
+        
+        .footer-t h3{
+            font-size: 1.9rem;
+            padding: 1rem 0;
+        
+        }
+        .footer-t p{
+            font-size: 1.2rem;
+            padding-bottom: 1rem;
+        }
+        hr{
+            width: 80%;
+            margin: 0 auto;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .footer-down p{
+            font-size: 1rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
      }
