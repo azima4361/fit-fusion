@@ -673,6 +673,11 @@ gap: 3%;
     background-color: #739ff7;
     border-color: blueviolet;
 }
+.best-card:active{
+    background-color: rgb(226, 43, 83);
+    box-shadow: 0 15px blue;
+    transform: translateY(30px);
+}
 .best-card-content{
 padding: 1rem;
 text-align: center;
@@ -786,7 +791,7 @@ hr{
  /* responsive media query  */
      @media only screen  and (max-width:576px){
      
-        .nav-container, .banner, .habits-container, .extra-mile , .training-section{
+        .nav-container, .banner, .habits-container, .extra-mile , .training-section, .best-plan-section{
             max-width: 400px;
             width: 90%;
     
@@ -1078,6 +1083,7 @@ letter-spacing: 0.3px;
         .footer{
          
             height: 60rem;
+            margin-top: 2rem;
            
         }
         .footer-up{
@@ -1122,6 +1128,58 @@ letter-spacing: 0.3px;
         .footer-down p{
             font-size: 1.3rem;
             padding: 2rem 0;
+        }
+
+        .best-plan-section{
+            height: 90rem;
+            
+        }
+
+        .best-plan-section p{
+         
+          padding: 0 2rem 2.5rem;
+
+           
+        }
+        .best-plan-options{
+            gap: 1.3rem;
+            width: 47%;
+            padding: 0 1rem;
+            }
+        
+        
+        .best-plan-container{
+           
+            grid-template-columns: 1fr;
+            margin-top: 1rem;
+          
+        }
+        .best-card{
+            height: 22rem;
+            width: 80%;
+            margin: 0 auto;
+          
+        }
+        
+        .best-card-content{
+        padding: 1rem;
+        text-align: center;
+        }
+        
+        .best-card-content p{
+            padding: 0 0 1rem 1.5rem;
+        
+        }
+       
+        .best-card-1{
+            margin-top: 3rem;
+        }
+        .best-card-3{
+            margin-top: 0;
+        }
+        .best-card-2{
+              height: 30rem;
+          
         }
         
      }
