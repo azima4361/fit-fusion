@@ -551,7 +551,7 @@ input[type=number],select{
     font-size: 1rem;
     font-weight: 400;
     box-sizing: border-box;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     border: none;
 width: 17rem;
 height: 2.4rem;
@@ -564,9 +564,31 @@ grid-template-columns: 40% 40%;
 /* gap: 2%; */
   padding-bottom: 12px;
 }
+.input-row-3, .input-row-2{
+    position: relative;
+}
 .input-row-3 select{
-    width: 35.2rem;
+    width: 35rem;
     height: 3rem;
+    appearance: none;
+}
+.input-row-2 select{
+    appearance: none;
+}
+.input-row-3::after, .input-row-2::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-right: 2px solid rgba(164, 160, 160, 0.6);
+    border-bottom: 2px solid rgba(164, 160, 160, 0.6);
+    transform: rotate(45deg);
+    right: 12rem;
+    top: 45%;
+    margin-top: -0.7rem;
+    pointer-events: none;
+
 }
 .input-row-4 {
     padding-top: 10px;
@@ -1073,6 +1095,12 @@ letter-spacing: 0.3px;
             }
         .input-row-3 select{
             width: 23rem;
+        }
+        .input-row-3::after, .input-row-2::after{
+            right: 4rem;
+            top: 45%;
+          
+        
         }
         .input-row-4 {
             padding-top: 10px;
