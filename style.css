@@ -870,8 +870,8 @@ hr{
             width: 90%;
         }
         .habits-container{
-            margin-bottom: 78rem;
-            margin-top: 40rem;
+            margin-bottom: 80rem;
+            margin-top: 45rem;
             padding: 0;
         }
         .habits-container h3{
@@ -900,10 +900,10 @@ hr{
         }
         
       .extra-mile{
-        margin-top: 50rem;
+        
       }
         .extra-mile-container{
-          
+         
             height: 37rem;
             grid-template-columns: 1fr;
             
@@ -1017,13 +1017,13 @@ letter-spacing: 0.3px;
         .calculator{
             height: 47rem;
             margin: 0 auto;
-            margin-left: 1rem;
+            /* margin-left: 1rem; */
             flex-direction: column;
           
         }
       
         table{
-          margin-left: 0.5rem;
+            margin-left: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
           
@@ -1032,7 +1032,7 @@ letter-spacing: 0.3px;
         caption {
         font-size: 1.3rem;
         font-weight: 800;
-        padding: 2rem 0 1.5rem 1rem ;
+        padding: 2rem 0 1.5rem 0 ;
         
         }
         th{
@@ -1047,6 +1047,7 @@ letter-spacing: 0.3px;
         
         
         .calculator-form{
+            margin-left: 1rem;
             width: 95%;
            padding-left: 1rem;
         }
@@ -1079,7 +1080,7 @@ letter-spacing: 0.3px;
         .input-row-4 .btn-primary{
             width: 14rem;
             height: 3rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 700;
         }
 
